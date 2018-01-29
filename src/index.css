@@ -3,3 +3,55 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.App {
+  height: 100vh;
+
+  display: grid;
+  place-items: center center;
+  grid-template-areas:
+    "one two three"
+    "eight nine four"
+    "seven six five";
+}
+
+.item-one {
+  grid-area: one;
+}
+
+.item-two {
+  grid-area: two;
+}
+
+.item-three {
+  grid-area: three;
+}
+
+.item-four {
+  grid-area: four;
+}
+.item-five {
+  grid-area: five;
+}
+
+.item-six {
+  grid-area: six;
+}
+
+.item-seven {
+  grid-area: seven;
+}
+
+.item-eight {
+  grid-area: eight;
+}
+
+.item-nine {
+  grid-area: nine;
+}
+
+@media (min-width: 375px) {
+  .App {
+    grid-template-areas: "nine one two" "seven eight three" "six five four";
+  }
+}
